@@ -1,0 +1,33 @@
+
+
+# Python caches and generated files
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Local configuration
+.env
+.env.*
+!.env.example
+
+# VS Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+
+# Operating-system files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Build and packaging output
+build/
+dist/
+*.egg-info/
+

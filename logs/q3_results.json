@@ -1,0 +1,92 @@
+{
+    "part_a_30_resamples": {
+        "single_tree": {
+            "bias_squared": 0.39719444444444446,
+            "variance": 0.6394722222222222,
+            "test_acc_mean": 0.48166666666666663,
+            "test_acc_std": 0.04955356249106168
+        },
+        "bagging": {
+            "bias_squared": 0.5280094999999999,
+            "variance": 0.02359083333333334,
+            "test_acc_mean": 0.7574999999999998,
+            "test_acc_std": 0.04077376607575023
+        },
+        "boosting": {
+            "bias_squared": 0.8906319829048714,
+            "variance": 0.0162334455055169,
+            "test_acc_mean": 0.28291666666666665,
+            "test_acc_std": 0.08269442578285163
+        }
+    },
+    "part_b_depth_analysis": [
+        {
+            "depth": 2,
+            "single_tree": {
+                "bias_squared": 0.9208163765650429,
+                "variance": 0.03245294538848948,
+                "test_acc_mean": 0.055,
+                "test_acc_std": 0.017559422921421233
+            },
+            "bagging_100": {
+                "bias_squared": 0.9348442333333333,
+                "variance": 0.01155018333333333,
+                "test_acc_mean": 0.13458333333333333,
+                "test_acc_std": 0.051809278984453054
+            },
+            "variance_removed_by_bagging": 0.02090276205515615
+        },
+        {
+            "depth": 8,
+            "single_tree": {
+                "bias_squared": 0.7955603897207387,
+                "variance": 0.11157321358849377,
+                "test_acc_mean": 0.14916666666666673,
+                "test_acc_std": 0.024565671621639456
+            },
+            "bagging_100": {
+                "bias_squared": 0.8179611888888889,
+                "variance": 0.015565311111111108,
+                "test_acc_mean": 0.4258333333333333,
+                "test_acc_std": 0.05253305837491496
+            },
+            "variance_removed_by_bagging": 0.09600790247738267
+        },
+        {
+            "depth": 16,
+            "single_tree": {
+                "bias_squared": 0.6407407250862636,
+                "variance": 0.21292275364514998,
+                "test_acc_mean": 0.26999999999999996,
+                "test_acc_std": 0.029509885349376284
+            },
+            "bagging_100": {
+                "bias_squared": 0.6756748444444444,
+                "variance": 0.02012757222222222,
+                "test_acc_mean": 0.61125,
+                "test_acc_std": 0.04919667163538607
+            },
+            "variance_removed_by_bagging": 0.19279518142292776
+        }
+    ],
+    "part_d_summary_table": {
+        "Single Tree": {
+            "clean_test_acc": 0.5875,
+            "masked_test_acc": 0.425,
+            "bias_squared": 0.39719444444444446,
+            "variance": 0.6394722222222222
+        },
+        "Bagging": {
+            "clean_test_acc": 0.875,
+            "masked_test_acc": 0.575,
+            "bias_squared": 0.5280094999999999,
+            "variance": 0.02359083333333334
+        },
+        "Boosting": {
+            "clean_test_acc": 0.375,
+            "masked_test_acc": 0.3125,
+            "bias_squared": 0.8906319829048714,
+            "variance": 0.0162334455055169
+        }
+    }
+}
